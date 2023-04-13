@@ -39,17 +39,21 @@ export default async function fetchGithub() {
         Contribution history visual for the past year
       </p>
       <div className="flex flex-wrap gap-[3px]">
-        {commitData.map((commit: any) => {
-          return commit.days.map((day: any, index: number) => {
-            const dayColor = calculateColor(day);
-            return (
-              <div
-                key={`${commit.week}${index}`}
-                className={`w-2.5 h-2.5 ${dayColor} rounded-sm`}
-              ></div>
-            );
-          });
-        })}
+        {commitData ? (
+          commitData.map((commit: any) => {
+            return commit.days.map((day: any, index: number) => {
+              const dayColor = calculateColor(day);
+              return (
+                <div
+                  key={`${commit.week}${index}`}
+                  className={`w-2.5 h-2.5 ${dayColor} rounded-sm`}
+                ></div>
+              );
+            });
+          })
+        ) : (
+          <p>data fetching error</p>
+        )}
       </div>
     </>
   );
