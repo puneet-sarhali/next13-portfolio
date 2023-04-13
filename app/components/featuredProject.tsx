@@ -9,7 +9,7 @@ import {
 export default function featuredProject() {
   return (
     <>
-      <div className="flex flex-col relative text-neutral-500 border border-neutral-800 bg-neutral-850 hover:bg-neutral-900 transition-all duration-1000 w-full h-full p-6 rounded-lg pr-16">
+      <div className="flex flex-col relative text-neutral-500 border border-neutral-800 bg-neutral-950 hover:bg-neutral-900 transition-all duration-1000 w-full h-full p-6 rounded-lg pr-16">
         {/* <p className="text-xxs text-blue-400  mb-2 bg-blue-900 w-fit px-2 py-0.5 rounded-full">
         featured project
       </p> */}
@@ -17,7 +17,7 @@ export default function featuredProject() {
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
           width="100%"
-          height="auto"
+          height="100%"
           preserveAspectRatio="none"
           viewBox="0 0 1440 600"
           className="absolute top-0 left-0 -z-0 overflow-hidden rotate-180 opacity-30 hover:opacity-70 transition-all duration-1000"
@@ -61,8 +61,8 @@ export default function featuredProject() {
             >
               <stop stopColor="rgba(65, 65, 65, 0.59)" offset="0"></stop>
               <stop
-                stop-opacity="0"
-                stop-color="rgba(65, 65, 65, 0.59)"
+                stopOpacity="0"
+                stopColor="rgba(65, 65, 65, 0.59)"
                 offset="0.66"
               ></stop>
             </linearGradient>
@@ -75,8 +75,8 @@ export default function featuredProject() {
             >
               <stop stopColor="rgba(65, 65, 65, 0.59)" offset="0"></stop>
               <stop
-                stop-opacity="0"
-                stop-color="rgba(65, 65, 65, 0.59)"
+                stopOpacity="0"
+                stopColor="rgba(65, 65, 65, 0.59)"
                 offset="0.66"
               ></stop>
             </linearGradient>

@@ -1,7 +1,7 @@
 import { SiNextdotjs, SiTailwindcss, SiOpenai } from "react-icons/si";
 export default function topProjects() {
   return (
-    <div className="relative text-neutral-500 border border-neutral-800 bg-neutral-850 hover:bg-neutral-900 transition-all duration-1000 w-full h-full p-6 rounded-lg pr-16">
+    <div className="relative text-neutral-500 border border-neutral-800 bg-neutral-900 hover:bg-neutral-900 transition-all duration-1000 w-full h-full p-6 rounded-lg pr-16">
       <h2 className="mb-2 mt-6 text-xs text-neutral-300">
         Itinerary Generator
       </h2>
