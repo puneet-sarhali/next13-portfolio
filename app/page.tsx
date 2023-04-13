@@ -21,6 +21,7 @@ export default function Home() {
         <div className="flex flex-col mx-8 h-full min-h-screen px-16 border-x border-neutral-800">
           <Sidebar />
           <div className="mb-8">
+            {/* @ts-expect-error Server Component */}
             <FetchGithub />
           </div>
           {/* PROJECTS SECTION STARTS */}
