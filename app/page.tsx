@@ -9,6 +9,7 @@ import { MdWorkOutline } from "react-icons/md";
 import Stack from "./components/stack";
 import About from "./components/about";
 import Footer from "./components/footer";
+import Error from "./error";
 
 const montserrat = Montserrat({
   weight: ["100", "300", "400", "500", "700"],
@@ -39,11 +40,6 @@ export default function Home() {
 
             <TopProjects />
             <TopProjects />
-          </div>
-
-          <div className="mb-8">
-            {/* @ts-expect-error Server Component */}
-            <FetchGithub />
           </div>
 
           {/* PROJECTS SECTION ENDS */}
