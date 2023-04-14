@@ -1,8 +1,8 @@
 import { SiNextdotjs, SiTailwindcss, SiOpenai } from "react-icons/si";
 export default function topProjects() {
   return (
-    <div className="relative text-neutral-500 border border-neutral-800 bg-neutral-900 hover:bg-neutral-900 transition-all duration-1000 w-full h-full p-6 rounded-lg pr-16">
-      <h2 className="mb-2 mt-6 text-xs text-neutral-300">
+    <div className="relative text-neutral-500 border border-neutral-800 bg-gradient-950 hover:bg-neutral-850 transition-all duration-700 w-full h-full p-6 rounded-lg pr-16">
+      <h2 className="mb-2 pt-16 text-xs text-neutral-300">
         Itinerary Generator
       </h2>
       <ul className="flex space-x-2 text-neutral-500">
@@ -16,7 +16,7 @@ export default function topProjects() {
           <SiOpenai className="text-lg"></SiOpenai>
         </li>
       </ul>
-      <p className="text-neutral-500 text-xs mt-8 max-w-xs">
+      <p className="text-neutral-500 text-xs mt-6 max-w-xs">
         Using Next13 as a meta react framework, It generates an itinerary based
         on the user&apos;s input.
       </p>

@@ -9,28 +9,28 @@ const font = Righteous({
 
 export default function Sidebar() {
   return (
-    <nav className="flex items-center w-full text-neutral-400 font-light mb-16 mt-10">
+    <nav className="flex items-center w-full text-neutral-400 font-light mt-10 border-b border-neutral-850 pb-4">
       <div>
-        <a className="text-neutral-400 text-2xl flex flex-col">
+        <a className="text-neutral-400 text-md sm:text-lg flex flex-col">
           Puneet Sandhu
-          <span className="text-blue-600 font-medium text-xs">
+          <span className="text-blue-600 font-medium text-xs ml-0.5">
             Software Engineer
           </span>
         </a>
       </div>
       <div className="ml-auto flex gap-4">
-        <a className="flex text-neutral-400 text-sm">
-          <DiGithubBadge className="text-xl mr-1 text-gray-500" />
-          Github
+        <a className="flex text-neutral-400 text-xs items-center">
+          <DiGithubBadge className="text-2xl mr-1 text-gray-500" />
+          <span className="hidden sm:block">Github</span>
         </a>
-        <a className="flex text-neutral-400 text-sm">
-          <CiLinkedin className="text-xl mr-1 text-gray-500" />
-          LinkedIn
+        <a className="flex text-neutral-400 text-xs items-center">
+          <CiLinkedin className="text-2xl mr-1 text-gray-500" />
+          <span className="hidden sm:block">LinkedIn</span>
         </a>
-        <a className="flex text-neutral-400 text-sm">
+        {/* <a className="flex text-neutral-400 text-xs items-center">
           <BiDownload className="text-xl mr-1 text-gray-500" />
           Resume
-        </a>
+        </a> */}
       </div>
     </nav>
   );

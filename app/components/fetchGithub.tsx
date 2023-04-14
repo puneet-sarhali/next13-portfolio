@@ -1,4 +1,5 @@
 //TODO: test if data is being cached
+// TODO: ERROR HANDING when data is not fetched
 import { SiGithub } from "react-icons/si";
 
 async function fetchGithubData() {
@@ -31,11 +32,11 @@ export default async function fetchGithub() {
   const commitData = await fetchGithubData();
   return (
     <>
-      <div className="bg-neutral-800 p-2 mb-6 rounded-full border border-neutral-700 w-fit">
+      <div className="bg-neutral-800 p-2 mb-6 rounded-full border border-neutral-700 w-fit mt-24">
         <SiGithub className="text-neutral-300 "></SiGithub>
       </div>
-      <h2 className="text-neutral-300 text-xs">Github activity</h2>
-      <p className="text-xxs text-neutral-500 mb-4">
+      <h2 className="text-neutral-300 text-md">Github activity</h2>
+      <p className="text-xs text-neutral-500 mb-4">
         Contribution history visual for the past year
       </p>
       <div className="flex flex-wrap gap-[3px]">
