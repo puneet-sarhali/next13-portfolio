@@ -9,7 +9,7 @@ async function fetchGithubData() {
       {
         headers: {
           "X-GitHub-Api-Version": "2022-11-28",
-          Authorization: "bearer " + process.env.GITHUB_API_KEY,
+          //Authorization: "bearer " + process.env.GITHUB_API_KEY,
         },
       }
     );
@@ -48,7 +48,7 @@ export default async function fetchGithub() {
         Contribution history visual for the past year
       </p>
       <div className="flex flex-wrap gap-[3px]">
-        {commitData ? (
+        {commitData &&
           commitData.map((commit: any) => {
             return commit.days.map((day: any, index: number) => {
               const dayColor = calculateColor(day);
@@ -59,12 +59,7 @@ export default async function fetchGithub() {
                 ></div>
               );
             });
-          })
-        ) : (
-          <p className="flex w-fit h-full justify-center items-center text-red-200 bg-red-900 p-2 rounded-md">
-            Error fetching data
-          </p>
-        )}
+          })}
       </div>
     </>
   );
