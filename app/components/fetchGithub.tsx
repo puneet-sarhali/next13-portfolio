@@ -1,5 +1,5 @@
 //TODO: test if data is being cached
-// TODO: ERROR HANDING when data is not fetched
+//TODO: ERROR HANDING when data is not fetched
 import { SiGithub } from "react-icons/si";
 
 async function fetchGithubData() {
@@ -37,6 +37,7 @@ function calculateColor(commits: number) {
 
 export default async function fetchGithub() {
   const commitData = await fetchGithubData();
+  console.log(commitData);
   return (
     <>
       <div className="bg-neutral-800 p-2 mb-6 rounded-full border border-neutral-700 w-fit mt-24">
@@ -60,7 +61,9 @@ export default async function fetchGithub() {
             });
           })
         ) : (
-          <p>data fetching error</p>
+          <p className="flex w-fit h-full justify-center items-center text-red-200 bg-red-900 p-2 rounded-md">
+            Error fetching data
+          </p>
         )}
       </div>
     </>
