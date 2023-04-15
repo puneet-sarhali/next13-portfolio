@@ -9,12 +9,13 @@ async function fetchGithubData() {
       {
         headers: {
           "X-GitHub-Api-Version": "2022-11-28",
-          Authorization: "bearer " + process.env.GITHUB_API_KEY,
+          //Authorization: "bearer " + process.env.GITHUB_API_KEY,
         },
       }
     );
     const json = await data.json();
-    if (json.message == "Not Found") {
+
+    if (json.message == "Not Found" || Object.keys(json).length === 0) {
       return null;
     }
     return json;
