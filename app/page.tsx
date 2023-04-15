@@ -10,6 +10,7 @@ import Stack from "./components/stack";
 import About from "./components/about";
 import Footer from "./components/footer";
 import Error from "./error";
+import ErrorBoundary from "./components/ErrorBoundary";
 
 const montserrat = Montserrat({
   weight: ["100", "300", "400", "500", "700"],
@@ -40,6 +41,13 @@ export default function Home() {
 
             <TopProjects />
             <TopProjects />
+          </div>
+
+          <div className="mb-8">
+            <ErrorBoundary>
+              {/* @ts-expect-error Server Component */}
+              <FetchGithub />
+            </ErrorBoundary>
           </div>
 
           {/* PROJECTS SECTION ENDS */}

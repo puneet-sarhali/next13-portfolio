@@ -1,4 +1,5 @@
 "use client";
+// TODO - add frosted background to the get in touch section
 import { createClient } from "@supabase/supabase-js";
 import { CiMail } from "react-icons/ci";
 

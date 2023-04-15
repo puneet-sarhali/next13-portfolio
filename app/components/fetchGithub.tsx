@@ -3,17 +3,24 @@
 import { SiGithub } from "react-icons/si";
 
 async function fetchGithubData() {
-  const data = await fetch(
-    "https://api.github.com/repos/puneet-sarhali/personal-projects/stats/commit_activity",
-    {
-      headers: {
-        "X-GitHub-Api-Version": "2022-11-28",
-        Authorization: "bearer " + process.env.GITHUB_API_KEY,
-      },
+  try {
+    const data = await fetch(
+      "https://api.github.com/repos/puneet-sarhali/personal-projects/stats/commit_activity",
+      {
+        headers: {
+          "X-GitHub-Api-Version": "2022-11-28",
+          //Authorization: "bearer " + process.env.GITHUB_API_KEY,
+        },
+      }
+    );
+    const json = await data.json();
+    if (json.message == "Not Found") {
+      return null;
     }
-  );
-  const json = await data.json();
-  return json;
+    return json;
+  } catch (error) {
+    return null;
+  }
 }
 
 function calculateColor(commits: number) {
