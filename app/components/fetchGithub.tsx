@@ -9,7 +9,7 @@ async function fetchGithubData() {
       {
         headers: {
           "X-GitHub-Api-Version": "2022-11-28",
-          //Authorization: "bearer " + process.env.GITHUB_API_KEY,
+          Authorization: "bearer " + process.env.GITHUB_API_KEY,
         },
       }
     );
