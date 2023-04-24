@@ -9,8 +9,6 @@ import { MdWorkOutline } from "react-icons/md";
 import Stack from "./components/stack";
 import About from "./components/about";
 import Footer from "./components/footer";
-import Error from "./error";
-import ErrorBoundary from "./components/ErrorBoundary";
 
 const montserrat = Montserrat({
   weight: ["100", "300", "400", "500", "700"],
@@ -24,6 +22,7 @@ export default function Home() {
       <div className="flex max-w-[74rem] h-full">
         <div className="flex flex-col mx-4 h-full min-h-screen lg:px-16 px-2 ">
           <Sidebar />
+          <About></About>
           <Stack></Stack>
 
           {/* PROJECTS SECTION STARTS */}
@@ -44,10 +43,8 @@ export default function Home() {
           </div>
 
           <div className="mb-8">
-            <ErrorBoundary>
               {/* @ts-expect-error Server Component */}
               <FetchGithub />
-            </ErrorBoundary>
           </div>
 
           {/* PROJECTS SECTION ENDS */}

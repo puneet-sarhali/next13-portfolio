@@ -9,7 +9,7 @@ import {
 export default function featuredProject() {
   return (
     <>
-      <div className="flex flex-col relative text-neutral-500 border border-neutral-800 bg-neutral-950 hover:bg-neutral-900 transition-all duration-1000 w-full h-full p-6 rounded-lg pr-16">
+      <div className="flex flex-col relative text-neutral-500 border border-neutral-800 bg-neutral-950 hover:bg-neutral-900 transition-all duration-500 w-full h-full p-6 rounded-lg pr-16">
         {/* <p className="text-xxs text-blue-400  mb-2 bg-blue-900 w-fit px-2 py-0.5 rounded-full">
         featured project
       </p> */}

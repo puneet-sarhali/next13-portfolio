@@ -159,13 +159,13 @@ export default function Contact() {
         </div>
 
         <input
-          className="bg-neutral-800 caret-blue-600 text-xs py-2 px-2 border-none sm:min-w-[20rem] min-w-[12rem] rounded-md placeholder:text-neutral-500"
+          className="bg-neutral-800 text-neutral-300 caret-blue-600 text-xs py-2 px-2 border-none sm:min-w-[20rem] min-w-[12rem] rounded-md placeholder:text-neutral-500"
           placeholder="example@mail.com"
           type="email"
           name="email"
         />
         <textarea
-          className="bg-neutral-800 caret-blue-600 text-xs py-2 px-2 border-none sm:min-w-[20rem] min-w-[12rem] rounded-md mt-2 placeholder:text-neutral-500"
+          className="bg-neutral-800 text-blue-600 caret-blue-600 text-xs py-2 px-2 border-none sm:min-w-[20rem] min-w-[12rem] rounded-md mt-2 placeholder:text-neutral-500"
           name="message"
           placeholder="message"
         />

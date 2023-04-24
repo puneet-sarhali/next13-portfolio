@@ -11,6 +11,9 @@ async function fetchGithubData() {
           "X-GitHub-Api-Version": "2022-11-28",
           Authorization: "bearer " + process.env.GITHUB_API_KEY,
         },
+        next: {
+          revalidate: 0,
+        }
       }
     );
     const json = await data.json();
@@ -38,7 +41,6 @@ function calculateColor(commits: number) {
 
 export default async function fetchGithub() {
   const commitData = await fetchGithubData();
-  console.log(commitData);
   return (
     <>
       <div className="bg-neutral-800 p-2 mb-6 rounded-full border border-neutral-700 w-fit mt-24">
