@@ -22,12 +22,18 @@ export default function About() {
         </defs>
         <rect width="100%" height="100%" fill="url(#pattern_1VIMX)" opacity="1" />
       </svg>
-      <div className="border border-neutral-800 p-8 rounded-md">
-          <h1 className="text-neutral-500 text-3xl mb-2">Building minimalistic, user-centric and responsive websites</h1>
-        <p className=" text-neutral-500  text-xs flex flex-col ordinal">
-          4th year Software Systems student at Simon Fraser University
+      <div className="border border-neutral-800 px-8 py-8 rounded-md">
+          {/* <h1 className="text-neutral-500 text-3xl mb-2">Building minimalistic, user-centric and responsive websites</h1> */}
+          <a className="text-neutral-200 text-md sm:text-xl flex flex-col">
+          Puneet Sandhu
+          <span className="text-neutral-500 text-xs ml-0.5 mb-3">
+            Software Developer / Designer
+          </span>
+        </a>
+        <p className=" text-neutral-500  text-xs">
+          CS student at Simon Fraser University
         </p>
-        <p className="mb-3 text-neutral-500 text-sm">Vancouver, Canada</p>
+        <p className=" text-neutral-500 text-xs">Vancouver, Canada</p>
         
         {/* <p className="text-neutral-500 text-xs tracking-wide">
           Using my proficiencies in web development technologies to design and

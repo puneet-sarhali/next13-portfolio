@@ -26,7 +26,7 @@ export default function stack() {
         Some of the technologies I&apos;ve worked with
       </p>
       <div>
-        <ul className="flex flex-wrap border border-neutral-800 p-6 rounded-md gap-6 text-xs sm:text-sm text-neutral-500 [&>*]:flex [&>*]:gap-2 [&>*]:items-center [&>*]:md:min-w-[8.5rem]">
+        <ul className="flex flex-wrap border border-neutral-800 sm:p-8 p-6 rounded-md gap-6 text-xs sm:text-sm text-neutral-500 [&>*]:flex [&>*]:gap-2 [&>*]:items-center [&>*]:md:min-w-[8.5rem]">
           <li>
             <SiAngular className="text-lg sm:text-2xl"></SiAngular>
             <p>Angular</p>

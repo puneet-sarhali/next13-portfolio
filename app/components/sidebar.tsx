@@ -9,13 +9,14 @@ const font = Righteous({
 
 export default function Sidebar() {
   return (
-    <nav className="flex items-center w-full text-neutral-400 font-light mt-10 border-b border-neutral-850 pb-4">
+    <nav className="flex items-center w-full text-neutral-400 font-light mt-6 border-b border-neutral-850 pb-2">
       <div>
-        <a className="text-neutral-400 text-md sm:text-lg flex flex-col">
-          Puneet Sandhu
+        <a className="text-neutral-400 text-xl sm:text-sm">
+        <span className="mr-2">❑</span>  sandhu
+          {/* Puneet Sandhu
           <span className="text-blue-600 font-medium text-xs ml-0.5">
-            Software Engineer
-          </span>
+            Software Developer
+          </span> */}
         </a>
       </div>
       <div className="ml-auto flex gap-4">
