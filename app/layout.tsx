@@ -12,6 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head></head>
       <body className="bg-neutral-950">{children}</body>
     </html>
   );

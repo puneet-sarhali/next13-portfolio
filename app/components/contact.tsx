@@ -25,7 +25,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="relative mb-24 mt-24 border border-neutral-800 p-12 rounded-md">
+    <div className="relative mb-24 mt-24 border border-neutral-900 p-12 rounded-md">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
@@ -145,11 +145,11 @@ export default function Contact() {
       >
         <div className="flex flex-col justify-center items-center mb-10">
           <div className="bg-neutral-800 p-2 mb-6 rounded-full border border-neutral-700 w-fit">
-            <CiMail className="text-neutral-300 "></CiMail>
+            <CiMail className="text-neutral-200 "></CiMail>
           </div>
 
           <div>
-            <h2 className="text-neutral-300 font-medium text-xl ">
+            <h2 className="text-neutral-200 font-medium text-xl ">
               Get in touch
             </h2>
             <p className="text-neutral-500 text-xs text-center">
@@ -159,7 +159,7 @@ export default function Contact() {
         </div>
 
         <input
-          className="bg-neutral-800 text-neutral-300 caret-blue-600 text-xs py-2 px-2 border-none sm:min-w-[20rem] min-w-[12rem] rounded-md placeholder:text-neutral-500"
+          className="bg-neutral-800 text-neutral-200 caret-blue-600 text-xs py-2 px-2 border-none sm:min-w-[20rem] min-w-[12rem] rounded-md placeholder:text-neutral-500"
           placeholder="example@mail.com"
           type="email"
           name="email"

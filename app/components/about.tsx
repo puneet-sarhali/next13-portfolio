@@ -1,40 +1,30 @@
 import { MdAccountCircle } from "react-icons/md";
 
-
-
 export default function About() {
   return (
-    <div className="mt-16 relative">
-          {/* <div className="bg-neutral-800 p-2 mb-6 rounded-full border border-neutral-700 w-fit">
+    <div className="mt-36 relative">
+      {/* <div className="bg-neutral-800 p-2 mb-6 rounded-full border border-neutral-700 w-fit">
             <MdAccountCircle className="text-neutral-300 "></MdAccountCircle>
           </div>
           <h2 className="text-neutral-300 text-md">Bio</h2>
           <p className="text-xs text-neutral-500 mb-4">
             Little bit about me
           </p> */}
-      <svg 
-      className="absolute top-0 left-0 -z-10 overflow-hidden opacity-20 transition-all duration-1000"
-      xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-        <defs>
-          <pattern id="pattern_1VIMX" patternUnits="userSpaceOnUse" width="9.5" height="9.5" patternTransform="rotate(45)">
-            <line x1="0" y="0" x2="0" y2="9.5" stroke="#808080" strokeWidth="1" />
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#pattern_1VIMX)" opacity="1" />
-      </svg>
-      <div className="border border-neutral-800 px-8 py-8 rounded-md">
-          {/* <h1 className="text-neutral-500 text-3xl mb-2">Building minimalistic, user-centric and responsive websites</h1> */}
-          <a className="text-neutral-200 text-md sm:text-xl flex flex-col">
-          Puneet Sandhu
-          <span className="text-neutral-500 text-xs ml-0.5 mb-3">
-            Software Developer / Designer
+
+      <div className="">
+        {/* <h1 className="text-neutral-500 text-3xl mb-2">Building minimalistic, user-centric and responsive websites</h1> */}
+        <a className="text-xl">
+          <span className="text-xs text-white bg-blue-700 px-4 py-1 rounded-full">
+            ----- &nbsp;software developer / designer
           </span>
         </a>
-        <p className=" text-neutral-500  text-xs">
-          CS student at Simon Fraser University
+        {/* <p className=" text-neutral-500  text-xs">
+          CS student at Simon Fraser University, Canada
+        </p> */}
+        <p className="max-w-[50rem] text-4xl sm:text-5xl font-medium mt-2 text-transparent bg-clip-text bg-gradient-to-r from-neutral-200 to-neutral-600">
+          Crafting minimalistic user-centered websites with maximum impact.
         </p>
-        <p className=" text-neutral-500 text-xs">Vancouver, Canada</p>
-        
+
         {/* <p className="text-neutral-500 text-xs tracking-wide">
           Using my proficiencies in web development technologies to design and
           build <span className="text-neutral-300">clean</span>, <span className="text-neutral-300">responsive</span> and <span className="text-neutral-300">efficient</span> websites.
