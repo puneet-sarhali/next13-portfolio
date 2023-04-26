@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   SiAngular,
   SiTailwindcss,
@@ -83,7 +84,7 @@ export default function featuredProject() {
           </defs>
         </svg>
         <div className="grow"></div>
-        <h2 className="mb-2 mt-24 text-neutral-200 ">aicolors.co</h2>
+        <h2 className="mb-2 mt-24 text-neutral-200 text-lg">aicolors.co</h2>
         <ul className="flex space-x-2 text-neutral-500">
           <li>
             <SiAngular className="text-lg"></SiAngular>
@@ -101,7 +102,7 @@ export default function featuredProject() {
             <SiOpenai className="text-lg"></SiOpenai>
           </li>
         </ul>
-        <p className="text-neutral-500 text-xs mt-8 max-w-xs">
+        <p className="text-neutral-500 text-sm mt-8 max-w-xs">
           AI Colors is a color palette generator that uses OpenAI&apos;s GPT-3.5
           API to generate color palettes based on a user&apos;s input.
         </p>
@@ -110,12 +111,20 @@ export default function featuredProject() {
           <p className="text-sm text-gray-300">8640</p>
         </div>
         <div className="flex space-x-4 mt-8 align-bottom">
-          <button className="text-blue-100 bg-blue-700 text-xxs w-24 h-7 text-center rounded-lg">
+          <Link
+            href="https://aicolors.co/"
+            target="_blank"
+            className="text-white z-10 bg-blue-700 text-xs px-6 py-2 text-center rounded-lg"
+          >
             Visit site
-          </button>
-          <button className="text-neutral-400 border border-neutral-700 text-xxs w-24 h-7 text-center rounded-lg">
-            View source
-          </button>
+          </Link>
+          <Link
+            href="https://github.com/puneet-sarhali/palette-generator"
+            target="_blank"
+            className="text-neutral-400 z-10 border border-neutral-700 text-xs px-6 py-2 text-center rounded-lg"
+          >
+            source
+          </Link>
         </div>
       </div>
     </>

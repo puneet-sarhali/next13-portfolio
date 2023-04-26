@@ -69,8 +69,8 @@ export default async function fetchGithub() {
       <div className="bg-neutral-800 p-2 mb-6 rounded-full border border-neutral-700 w-fit mt-24">
         <SiGithub className="text-neutral-300 "></SiGithub>
       </div>
-      <h2 className="text-neutral-200 text-md">Github activity</h2>
-      <p className="text-xs text-neutral-500 mb-4">
+      <h2 className="text-neutral-200 text-lg">Github activity</h2>
+      <p className="text-sm text-neutral-500 mb-4">
         Contribution history visual for the past year
       </p>
       <div className="flex flex-wrap gap-[3px]">

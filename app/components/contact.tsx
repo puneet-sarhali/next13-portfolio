@@ -10,13 +10,15 @@ export default function Contact() {
   );
   async function handleFormSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const { name, message } = event.target as typeof event.target & {
-      name: { value: string };
+    const { email, message } = event.target as typeof event.target & {
+      email: { value: string };
       message: { value: string };
     };
     const { data, error } = await supabase
       .from("portfolio")
-      .insert([{ name: name.value, message: message.value }]);
+      .insert([{ email: email.value, message: message.value }]);
+
+    console.log(data, error);
     if (error) {
       alert(error.message);
     } else {

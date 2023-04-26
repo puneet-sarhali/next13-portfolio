@@ -21,9 +21,9 @@ export default function stack() {
       <div className="bg-neutral-800 p-2 mb-6 rounded-full border border-neutral-700 w-fit">
         <FaTools className="text-neutral-300 "></FaTools>
       </div>
-      <h2 className="text-neutral-200 text-md">Tools</h2>
-      <p className="text-xs text-neutral-500 mb-4">
-        Some of the technologies I&apos;ve worked with
+      <h2 className="text-neutral-200 text-lg">Tools</h2>
+      <p className="text-sm text-neutral-500 mb-4">
+        Some of the languages / frameworks I&apos;ve worked with
       </p>
 
       <div className="relative">
