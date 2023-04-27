@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function footer() {
   return (
     <footer className="border-t border-neutral-850 text-neutral-400 py-8">
@@ -12,7 +14,10 @@ export default function footer() {
             Built with Next.js and Tailwind CSS
           </p>
           <p className="text-xs text-neutral-400">
-            Svg Background by <a href="">BGJar</a>
+            Svg Background by{" "}
+            <Link href="https://bgjar.com/" target="_blank">
+              BGJar
+            </Link>
           </p>
         </div>
       </div>

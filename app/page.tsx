@@ -10,10 +10,49 @@ import Stack from "./components/stack";
 import About from "./components/about";
 import Footer from "./components/footer";
 
+import {
+  SiAngular,
+  SiNextdotjs,
+  SiPostgresql,
+  SiTypescript,
+  SiGooglecloud,
+  SiReactivex,
+  SiTailwindcss,
+} from "react-icons/si";
+import { Project } from "@/types";
+
 const montserrat = Montserrat({
   weight: ["100", "300", "400", "500", "700"],
   subsets: ["latin"],
 });
+
+const projectData: Project[] = [
+  {
+    title: "Open Collab",
+    description:
+      "A Reddit-style collaborative platform for open source developers to explore projects and find collaborators.",
+    stack: [
+      <SiAngular key={"angular"} />,
+      <SiPostgresql key={"postgres"} />,
+      <SiTypescript key={"ts"} />,
+      <SiGooglecloud key={"gcp"} />,
+      <SiReactivex key={"rxjs"} />,
+    ],
+    githubUrl: "https://github.com/puneet-sarhali/open-collab",
+  },
+  {
+    title: "Portfolio",
+    description:
+      "Portfolio project built with Next.js 13, featuring server-side rendering for optimized performance and a seamless user experience.",
+    stack: [
+      <SiNextdotjs key={"nextjs"} />,
+      <SiTailwindcss key={"tailwind"} />,
+      <SiTypescript key={"ts"} />,
+    ],
+    githubUrl: "https://github.com/puneet-sarhali/next13-portfolio",
+  },
+];
+
 export default function Home() {
   return (
     <main
@@ -38,8 +77,12 @@ export default function Home() {
               <FeaturedProject />
             </div>
 
-            <TopProjects />
-            <TopProjects />
+            {projectData.map((project) => (
+              <TopProjects key={project.githubUrl} projectData={project} />
+            ))}
+
+            {/* <TopProjects />
+            <TopProjects /> */}
           </div>
 
           <div className="mb-8">

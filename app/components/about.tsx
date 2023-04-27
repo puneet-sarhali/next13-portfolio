@@ -10,11 +10,11 @@ export default function About() {
           <p className="text-xs text-neutral-500 mb-4">
             Little bit about me
           </p> */}
-      <a className="text-xl">
+      <p className="text-xl">
         <span className="text-xs text-white bg-blue-700 px-4 py-1 rounded-full">
           ----- &nbsp;software developer / designer
         </span>
-      </a>
+      </p>
       <div className="flex items-center justify-center">
         {/* <h1 className="text-neutral-500 text-3xl mb-2">Building minimalistic, user-centric and responsive websites</h1> */}
 
