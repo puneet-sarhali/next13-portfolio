@@ -3,4 +3,5 @@ export interface Project {
   description: string;
   githubUrl: string;
   stack: JSX.Element[];
+  siteUrl?: string;
 }

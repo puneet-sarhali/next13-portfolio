@@ -28,6 +28,18 @@ const montserrat = Montserrat({
 
 const projectData: Project[] = [
   {
+    title: "Goal Tracker",
+    description:
+      "Leveraging GitHub integration to help users set goals, track their progress, and stay motivated by committing money towards their goals.",
+    stack: [
+      <SiNextdotjs key={"nextjs"} />,
+      <SiTailwindcss key={"tailwind"} />,
+      <SiTypescript key={"ts"} />,
+    ],
+    githubUrl: "https://github.com/puneet-sarhali/goal-tracker",
+    siteUrl: "https://goal-tracker-wine.vercel.app/",
+  },
+  {
     title: "Open Collab",
     description:
       "A Reddit-style collaborative platform for open source developers to explore projects and find collaborators.",
@@ -39,17 +51,6 @@ const projectData: Project[] = [
       <SiReactivex key={"rxjs"} />,
     ],
     githubUrl: "https://github.com/puneet-sarhali/open-collab",
-  },
-  {
-    title: "Portfolio",
-    description:
-      "Portfolio project built with Next.js 13, featuring server-side rendering for optimized performance and a seamless user experience.",
-    stack: [
-      <SiNextdotjs key={"nextjs"} />,
-      <SiTailwindcss key={"tailwind"} />,
-      <SiTypescript key={"ts"} />,
-    ],
-    githubUrl: "https://github.com/puneet-sarhali/next13-portfolio",
   },
 ];
 
@@ -84,11 +85,10 @@ export default function Home() {
             {/* <TopProjects />
             <TopProjects /> */}
           </div>
-
+          {/* 
           <div className="mb-8">
-            {/* @ts-expect-error Server Component */}
             <FetchGithub />
-          </div>
+          </div> */}
 
           {/* PROJECTS SECTION ENDS */}
           <Contact></Contact>

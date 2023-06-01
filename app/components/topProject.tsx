@@ -17,9 +17,15 @@ export default function topProjects({ projectData }: { projectData: Project }) {
         {projectData.description}
       </p>
       <div className="flex space-x-4 mt-4">
-        {/* <button className="text-neutral-200 bg-neutral-900 border border-neutral-700 text-xxs w-24 h-7 text-center rounded-lg">
-          Visit site
-        </button> */}
+        {projectData.siteUrl && (
+          <Link
+            href={projectData.siteUrl}
+            target="_blank"
+            className="text-neutral-400 z-10 border border-neutral-700 text-xs px-6 py-2 text-center rounded-lg"
+          >
+            Visit site
+          </Link>
+        )}
         <Link
           href={projectData.githubUrl}
           target="_blank"
