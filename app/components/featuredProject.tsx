@@ -119,7 +119,7 @@ export default function featuredProject() {
             Visit site
           </Link>
           <Link
-            href="https://github.com/puneet-sarhali/palette-generator"
+            href="https://github.com/puneet-sarhali/palette"
             target="_blank"
             className="text-neutral-400 z-10 border border-neutral-700 text-xs px-6 py-2 text-center rounded-lg"
           >
